@@ -1,0 +1,23 @@
+﻿<Window x:Class="mdk1101_pr8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mdk1101_pr8"
+        mc:Ignorable="d"
+        Title="Farm" Height="450" Width="845" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="farm" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Код КФХ" Binding="{Binding Code_KFX}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название хозяйства" Binding="{Binding Name_Farm}"></DataGridTextColumn>
+                <DataGridTextColumn Header="ФИО фермера" Binding="{Binding FIO_Farmer}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding address}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding  telephone}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Специализация" Binding="{Binding Specialization}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
