@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mdk1101_pr8"
         mc:Ignorable="d"
-        Title="Specialization" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Specialization" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <DataGrid x:Name="specialization" AutoGenerateColumns="False">
             <DataGrid.Columns>

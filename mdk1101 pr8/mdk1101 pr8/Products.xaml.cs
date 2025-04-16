@@ -39,5 +39,10 @@ namespace mdk1101_pr8
             table2.Load(dataReader2);
             products.ItemsSource = table2.DefaultView;
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            connection2.Close();
+        }
     }
 }

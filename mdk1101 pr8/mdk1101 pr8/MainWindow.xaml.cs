@@ -40,5 +40,10 @@ namespace mdk1101_pr8
             table.Load(dataReader);
             farm.ItemsSource = table.DefaultView;
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            connection.Close();
+        }
     }
 }
